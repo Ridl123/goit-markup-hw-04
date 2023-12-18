@@ -356,7 +356,7 @@ p {
   border-radius: 50%;
   display: flex;
   align-items: center;
-  align-items: center;
+  justify-content: center;
 }
 .footer-link:hover,
 .footer-link:focus {
