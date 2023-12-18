@@ -12,6 +12,10 @@ body {
   color: var(--adress-link);
   background-color: var(--white);
 }
+h2,
+p {
+  margin: 0;
+}
 .image {
   display: block;
 }
@@ -111,7 +115,7 @@ body {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/mainpage/people-office\ 1.jpg);
+    url(../images/people-office.jpg);
   /* background-image: linear-gradient(
       rgba(46, 47, 66, 0 7),
       rgba(46, 47, 66, 0.7)
