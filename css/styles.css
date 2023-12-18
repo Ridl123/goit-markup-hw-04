@@ -290,7 +290,7 @@ ul {
 }
 .customer-list-item {
   /* width: 220px; */
-  flex-basis: calc((100% - 120px) / 6);
+  width: calc((100% - 120px) / 6);
 }
 .customers-link {
   width: 100%;
