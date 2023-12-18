@@ -290,7 +290,7 @@ p {
 }
 .customer-list-item {
   /* width: 220px; */
-  width: calc((100% - 120px) / 6);
+  flex-basis: calc((100% - 120px) / 6);
 }
 .customers-link {
   width: 100%;
@@ -318,6 +318,9 @@ p {
 .footer-container {
   display: flex;
   align-items: baseline;
+  margin-right: 120px;
+}
+.footer-container-logo {
   margin-right: 120px;
 }
 .logo-studio-footer {
