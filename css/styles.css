@@ -288,7 +288,8 @@ p {
   height: 88px;
 }
 .customer-list-item {
-  width: calc((100% - 120px) / 6);
+  width: 220px;
+  /* width: calc((100% - 120px) / 6); */
 }
 .customers-link {
   width: 100%;
