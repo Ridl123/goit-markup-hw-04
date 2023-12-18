@@ -289,8 +289,8 @@ ul {
   padding: 0;
 }
 .customer-list-item {
-  /* width: 220px; */
-  width: calc((100% - 120px) / 6);
+  width: 220px;
+  /* width: calc((100% - 120px) / 6); */
 }
 .customers-link {
   width: 100%;
