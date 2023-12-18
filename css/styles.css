@@ -4,6 +4,7 @@
   --logo-studio-header: #2e2f42;
   --adress-link: #434455;
   --logo-studio-footer: #f4f4fd;
+  --customer-color: #8e8f99;
 }
 /* Global styles */
 body {
@@ -29,6 +30,8 @@ body {
 /* Classes */
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-content {
   display: flex;
@@ -37,7 +40,10 @@ body {
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
+  /* display: flex;
+  align-items: baseline; */
 }
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -101,7 +107,15 @@ body {
 }
 
 .hero-section {
-  /* background-image: ; */
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/mainpage/people-office\ 1.jpg);
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-color: var(--logo-studio-header);
   padding: 188px;
 }
@@ -136,6 +150,16 @@ body {
 .order-button:hover,
 .order-button:focus {
   background-color: #404bbf;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  margin-bottom: 8px;
 }
 
 .strong-points-section {
@@ -197,6 +221,8 @@ body {
   background-color: #ffffffff;
   width: 264px;
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .team-member-info {
   padding: 32px 0;
@@ -217,16 +243,71 @@ body {
   color: var(--adress-link);
   text-align: center;
 }
+.team-member-social {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.social-media-member {
+  width: 40px;
+  height: 40px;
+}
+.social-media-member-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--logo-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  align-items: center;
+}
+.social-media-member-link:hover,
+.social-media-member-link:focus {
+  background-color: #404bbf;
+}
+
+.team-member-icon {
+  fill: var(--logo-studio-footer);
+}
+
 .customers-section {
-  padding: 120px 156px;
+  padding: 120px 0;
 }
 .customers-list {
   display: flex;
+  gap: 24px;
+  height: 88px;
+}
+.customer-list-item {
+  width: calc((100% - 120px) / 6);
+}
+.customers-link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--customer-color);
+}
+.customers-link:hover,
+.customers-link:focus {
+  border-color: #404bbf;
+  color: #404bbf;
+}
+.customer-logo {
+  fill: currentColor;
 }
 .footer {
   background-color: var(--logo-studio-header);
   padding: 100px 0;
   display: flex;
+}
+.footer-container {
+  display: flex;
+  align-items: baseline;
+  gap: 120px;
 }
 .logo-studio-footer {
   color: #f4f4fd;
@@ -237,7 +318,38 @@ body {
   letter-spacing: 0.02em;
   max-width: 264px;
 }
-
+.footer-social-media {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+.footer-social-list {
+  display: flex;
+  gap: 16px;
+}
+.footer-social-link {
+  width: 40px;
+  height: 40px;
+}
+.footer-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--logo-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  align-items: center;
+}
+.footer-link:hover,
+.footer-link:focus {
+  background-color: #31d0aa;
+}
+.footer-icon {
+  fill: var(--logo-studio-footer);
+}
 /* for Portfolio */
 .main-portfolio-section {
   padding-top: 96px;
@@ -267,6 +379,8 @@ body {
   color: #ffffffff;
   background-color: #404bbf;
   border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .projects-list {
   display: flex;
@@ -283,10 +397,13 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(var(--logo-studio-header));
+  display: block;
 }
 .row-element-link:hover,
 .row-element-link:focus {
   color: #404bbf;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .project-info {
   padding: 32px 16px;
